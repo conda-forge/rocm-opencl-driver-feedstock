@@ -1,5 +1,5 @@
 {% set name = "rocm-opencl-driver" %}
-{% set version = "2.7.0" %}
+{% set version = "2.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/RadeonOpenCompute/ROCm-OpenCL-Driver/archive/roc-{{ version }}.tar.gz
-  sha256: bf59dac034e4a24567b933e1d94a65335823f547ef5b60da64c40ad2ba9d3042
+  sha256: 00a50696732a4cd3b880cfb11a64d02c5dfd956a79796eacda166173c14eb97a
   patches:
     - compile_flags.diff 
     - link_libraries.diff
